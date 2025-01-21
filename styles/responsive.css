@@ -30,7 +30,7 @@
 
   header{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 2rem auto;
   }
 
  
@@ -72,6 +72,9 @@
     color: #5D58EF;
   }
   
+  .menu-icon{
+    display: none;
+  }
   /* banner style  */
   .banner{
     justify-content: space-between;
@@ -97,4 +100,45 @@
   }
   .enroll-btn{
     background-color: #000;
+  }
+
+
+  @media screen and (max-width:576px){
+    .body{
+      margin: 0 1rem;
+    }
+    .nabvar{
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #FEA301;
+    }
+    .nabvar ul,
+     .brand,
+     .contact-btn
+    {
+      display: none;
+
+    }
+    .menu-icon{
+      display: block;
+      font-size: 2rem;
+    }
+    .banner{
+      flex-direction: column-reverse;
+    }
+    
+    .banner-content{
+      text-align: center;
+      padding: 0px;
+      margin: 0 auto;
+    }
+    .banner-content .banner-titel{
+      font-size: 2rem;
+    }
+    .banner-desc{
+      font-size: 14px;
+    }
+    .banner-imge img{
+      width: 100%;
+  
+    }
   }
