@@ -25,10 +25,12 @@
     color: #fff;
 
   }
-
+  body{
+    background-color: #f7f7f7;
+  }
   /* header style  */
 
-  header{
+  header, main{
     max-width: 1200px;
     margin: 2rem auto;
   }
@@ -101,10 +103,97 @@
   .enroll-btn{
     background-color: #000;
   }
+/* .curriculam section style  */
+  .curriculam{
+    background-image: url('../assets/bg.png');
+    background-position: center;
+    background-size:cover;
+    margin: 6rem auto;
+   
+
+  }
+  .section-titel{
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 8rem auto;
+  
+    
+  }
+  .card-container{
+   justify-content: space-around;
+   gap: 2rem; 
+  }
+  .card{
+    padding:  3.5rem 2rem;
+    text-align: center;
+    border-radius: 1.2rem;
+    box-shadow: 5px 5px 40px rgba(240, 239, 239, 0.545);
+  }
+  .card h3{
+    font-size: 1.5rem;
+  }
+  .card-desc{
+    font-size: 1rem;
+    color: #808080; 
+    font-weight: 600;
+    line-height: 28.3px;
+    margin-bottom: 3rem;
+
+  }
+  .card-btn{
+    background-color: #fff;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .kidner-btn{
+    color:#01adfdf6 ;
+  }
+  .elementor-btn{
+    color:#fd9001f4;
+  }
+  .middle-btn{
+    color:#01fd59f7 ;
+  }
+  .kidner{
+    background-image: linear-gradient( #01adfd3d, #ffffff 40% );
+    border: 1px solid #01adfd3c ;
+  }
+  .elementor{
+    background-image: linear-gradient( #fd900129, #ffffff 40% );
+    border: 1px solid #fd90014f;
+  }
+  .middle{
+    background-image: linear-gradient( #01fd5927, #ffffff 40% );
+    border: 1px solid #01fd5947;
+  }
+
+  .button-container{
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 6rem auto;
+  }
+  .btn-box{
+    width: 60px;
+    height: 60px;
+    background-color: #FEA301;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .btn-box i{
+    font-size: 2.5rem;
+    color: #fff;
+  }
+ /* mobail devices for responsive  */
 
 
   @media screen and (max-width:576px){
-    .body{
+    body{
       margin: 0 1rem;
     }
     .nabvar{
@@ -140,5 +229,32 @@
     .banner-imge img{
       width: 100%;
   
+    }
+    .curriculam{
+      margin: 1rem 0;
+    }
+
+    .card-container{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+    }
+    .button-container{
+      display: none;
+    }
+    .section-titel{
+      font-size: 1.7rem;
+      margin: 3rem 0;
+    }
+    .card{
+      padding: 3rem;
+    }
+    .card h3{
+      font-size: 1rem;
+      margin: 2rem auto;
+    }
+    .card-desc{
+      font-size: 0.8rem;
     }
   }
