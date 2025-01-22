@@ -13,6 +13,10 @@
     font-style: normal;
   }
   /* seared style  */
+  *{
+    padding: 0;
+    margin: 0;
+  }
   .d-flex{
     display: flex;
   }
@@ -104,6 +108,7 @@
     background-color: #000;
   }
 /* .curriculam section style  */
+
   .curriculam{
     background-image: url('../assets/bg.png');
     background-position: center;
@@ -191,11 +196,93 @@
   }
 
   /* stories style  */
+  .stores-section{
+    background-image: linear-gradient(#f7f7f7 20%, #fd90015e);
+  }
+  .stories{
+    max-width: 1200px;
+    margin: 2rem auto;
+  }
+  .box-container{
+   display: grid;
+   grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+  }
+  .box-left{
+    border-radius: 20px;
+    border: 1px solid red;
+    background-color: #fff;
+  }
+  .imge img{
+    width: 100%;
+    border-radius:20px 20px 0 0;
+    position: relative;
+    }
+  
+.box-content{
+padding:3rem;
+}
+.box-content h3{
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
 
+}
+.box-content p{
+  font-size: 15px;
+  color: #666666;
+  font-family: "Raleway", serif;
+  line-height: 28px;
+  font-weight: 500;
+}
+.secendary-btn{
+  background-color: #3CD8E8;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 50px;
+}
+.left-btn{
+  margin-top: -70px;
+  position: absolute;
+
+}
+    
   .box-right{
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 1rem;
+  }
+  .box{
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  .box img{
+    width: 100%;
+    border-radius:20px 20px 0 0;
+    position: relative;
+
+  }
+  .box-desc{
+    padding: 1rem;
+  }
+  .box-btn{
+    position: absolute;
+    margin-top: -40px;
+    background-color: #95B226;
+  }
+  .box-desc h4{
+    font-size: 1rem;
+    line-height: 28px;
+    font-weight: bold;
+  }
+  .stories-btn{
+   padding: 5rem 0;
+    text-align: center;
+  }
+  .view-btn{
+    background-color: #000;
   }
  /* mobail devices for responsive  */
 
@@ -248,7 +335,8 @@
       justify-content: center;
   
     }
-    .button-container{
+    .button-container,
+    .box-left{
       display: none;
     }
     .section-titel{
@@ -264,5 +352,17 @@
     }
     .card-desc{
       font-size: 0.8rem;
+    }
+    .box-container{
+      grid-template-columns: 1fr;
+    }
+    .box-desc h4{
+      font-size: 9px;
+    }
+    .box-btn{
+      font-size: 9px;
+    }
+    .stories-btn{
+      padding: 1rem 0;
     }
   }
