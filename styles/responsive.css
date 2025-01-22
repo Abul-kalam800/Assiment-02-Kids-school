@@ -197,20 +197,21 @@
 
   /* stories style  */
   .stores-section{
-    background-image: linear-gradient(#f7f7f7 20%, #fd90015e);
+    background-image: linear-gradient(#f7f7f7 20%, #fd90015e),url('../assets/bg.png');
   }
   .stories{
     max-width: 1200px;
-    margin: 2rem auto;
+    margin: auto;
   }
   .box-container{
    display: grid;
    grid-template-columns: repeat(2, auto);
     gap: 1rem;
+   
+  
   }
   .box-left{
     border-radius: 20px;
-    border: 1px solid red;
     background-color: #fff;
   }
   .imge img{
@@ -284,12 +285,87 @@ padding:3rem;
   .view-btn{
     background-color: #000;
   }
+  /* footer style ************************* */
+  footer{
+    background-color: #1de70eba;
+    
+  }
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 2rem;
+    color: #fff;
+    padding: 6rem 0;
+    
+ 
+  }
+  .footer-logo{
+   margin-bottom: 2rem;
+    align-items: center;
+
+  }
+  .footer-logo h3{
+    font-size: 2rem;
+  }
+
+  .footer-box ul{
+    list-style: none;
+  }
+  .footer-box ul li{
+    margin-bottom: .8rem;
+  }
+  .footer-box a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+  
+    
+  }
+  .footer-box p{
+    font-size: 20px;
+  }
+    .footer-box h4{
+      font-size: 24px;
+      margin-bottom: 1rem;
+
+
+  }
+  .social-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  }
+ .icon-box{
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ }
+ .facebook{
+  background-color: #3B5998;
+ }
+ .dribble{
+  background-color: #EA4C89;
+ }
+ .twitter{
+  background-color: #1DA1F2;
+ }
+ .google{
+  background-color: #DD4B39;
+ }
+
  /* mobail devices for responsive  */
 
 
   @media screen and (max-width:576px){
     body{
-      margin: 0 1rem;
+      padding: 0 1rem;
     }
     .nabvar{
       padding-bottom: 1rem;
@@ -353,16 +429,24 @@ padding:3rem;
     .card-desc{
       font-size: 0.8rem;
     }
-    .box-container{
+    .box-container, 
+    .footer-container{
       grid-template-columns: 1fr;
     }
     .box-desc h4{
-      font-size: 9px;
+      font-size: 12px;
     }
     .box-btn{
       font-size: 9px;
     }
     .stories-btn{
       padding: 1rem 0;
+    }
+    .footer-container{
+      gap: 3rem;
+      padding: 0 2rem;
+    }
+    .footer-logo p{
+      font-size: 1rem;
     }
   }
