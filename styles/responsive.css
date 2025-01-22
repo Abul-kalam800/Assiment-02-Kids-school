@@ -81,6 +81,9 @@
   .menu-icon{
     display: none;
   }
+  .contact-btn:hover{
+    background-color: #000;
+  }
   /* banner style  */
   .banner{
     justify-content: space-between;
@@ -106,6 +109,10 @@
   }
   .enroll-btn{
     background-color: #000;
+    transition: 0.5s;
+  }
+  .enroll-btn:hover{
+    background-color: #01ACFD;
   }
 /* .curriculam section style  */
 
@@ -188,11 +195,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
   
   }
   .btn-box i{
     font-size: 2.5rem;
     color: #fff;
+  }
+  .btn-box:hover{
+    background-color: #01ACFD;
+    color: #FEA301;
   }
 
   /* stories style  */
@@ -243,11 +255,15 @@ padding:3rem;
   font-weight: 500;
   color: #fff;
   border-radius: 50px;
+  transition: 0.5s;
 }
 .left-btn{
   margin-top: -70px;
   position: absolute;
 
+}
+.left-btn:hover{
+  background-color: #000;
 }
     
   .box-right{
@@ -272,6 +288,11 @@ padding:3rem;
     position: absolute;
     margin-top: -40px;
     background-color: #95B226;
+    transition: 0.5s;
+  }
+  .box-btn:hover{
+    background-color: #000;
+
   }
   .box-desc h4{
     font-size: 1rem;
@@ -284,6 +305,10 @@ padding:3rem;
   }
   .view-btn{
     background-color: #000;
+    transition: 0.5s;
+  }
+  .view-btn:hover{
+    background-color: #01ACFD;
   }
   /* footer style ************************* */
   footer{
@@ -322,6 +347,9 @@ padding:3rem;
     color: #fff;
   
     
+  }
+  .footer-box a:hover{
+    color: red;
   }
   .footer-box p{
     font-size: 20px;
@@ -463,6 +491,8 @@ padding:3rem;
       font-size: 1rem;
     }
     marquee{
-      
+      font-size: 1.4rem;
+      margin: 1rem 0;
+     
     }
   }
