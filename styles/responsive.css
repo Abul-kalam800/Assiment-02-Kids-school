@@ -360,6 +360,19 @@ padding:3rem;
   background-color: #DD4B39;
  }
 
+ marquee{
+  max-width: 1200px;
+  background-color: #01ACFD;
+  margin: 2rem 0;
+  font-size: 2rem;
+  color: #f4dc05;
+ }
+ .offer{
+  font-size: 2rem;
+  font-weight: bold;
+  color: red;
+
+ }
  /* mobail devices for responsive  */
 
 
@@ -444,9 +457,12 @@ padding:3rem;
     }
     .footer-container{
       gap: 3rem;
-      padding: 0 2rem;
+      padding: 5rem 2rem;
     }
     .footer-logo p{
       font-size: 1rem;
+    }
+    marquee{
+      
     }
   }
